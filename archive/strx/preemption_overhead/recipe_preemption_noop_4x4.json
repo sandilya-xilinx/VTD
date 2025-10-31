@@ -4,11 +4,7 @@
     "xclbin": "preemption_4x4.xclbin"
   },
   "resources": {
-    "buffers": [
-      { "name": "bo_ifm", "type": "input", "size": 1024 },
-      { "name": "bo_ofm", "type": "output", "size": 1024 },
-      { "name": "bo_wts1", "type": "input", "size": 1024 },
-      { "name": "bo_wts2", "type": "input", "size": 1024 }    
+    "buffers": [ 
     ],
     "kernels": [
       { "name": "k1", "instance": "DPU", "ctrlcode": "preemption_noop_4x4.elf"}

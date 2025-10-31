@@ -4,11 +4,7 @@
     "xclbin": "preemption_4x8.xclbin"
   },
   "resources": {
-    "buffers": [
-      { "name": "arg0", "type": "input", "size": 20 },
-      { "name": "arg1", "type": "input", "size": 20 },
-      { "name": "arg2", "type": "input", "size": 20 },
-      { "name": "arg3", "type": "input", "size": 20 }    
+    "buffers": [  
     ],
     "kernels": [
       { "name": "k1", "instance": "DPU", "ctrlcode": "preemption_memtile_4x8.elf"}
@@ -18,14 +14,17 @@
     "runs": [
       {
         "name": "k1",
-        "arguments" : [
-          { "name": "arg0", "argidx": 3 },
-          { "name": "arg1", "argidx": 4 },
-          { "name": "arg2", "argidx": 5 },
-          { "name": "arg3", "argidx": 6 }        
+        "arguments": [
         ],
         "constants": [
-          { "value": 3, "type": "int", "argidx": 0 }
+          { "value": 3, "type": "int", "argidx": 0 },
+          { "value": 0, "type": "int", "argidx": 1 },
+          { "value": 0, "type": "int", "argidx": 2 },
+          { "value": 0, "type": "int", "argidx": 3 },
+          { "value": 0, "type": "int", "argidx": 4 },
+          { "value": 0, "type": "int", "argidx": 5 },
+          { "value": 0, "type": "int", "argidx": 6 },
+          { "value": 0, "type": "int", "argidx": 7 }
         ]
       }
     ]
