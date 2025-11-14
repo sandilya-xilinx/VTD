@@ -1,10 +1,12 @@
 {
   "version": "1.0",
-  "execution": {
-    "iterations": 10000,
-    "verbose": false,
-    "runlist_threshold": 1,
+  "executions": {
+   "throughput": {
+    "runlist_threshold": 0,
+    "iterations": 100,
     "mode": "throughput",
-    "depth": 4 
+    "depth": 10, 
+    "verbose": false
+   }
   }
 }
