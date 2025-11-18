@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "header": {
+    "program": "preemption_memtile_4x1.elf"
+  },
+  "resources": {
+    "buffers": [],
+    "kernels": [
+      { "name": "k1", "instance": "DPU"}
+    ]
+  },
+  "execution": {
+    "runs": [
+      {
+        "name": "k1",
+        "arguments": []
+      }
+    ]
+  }
+}
